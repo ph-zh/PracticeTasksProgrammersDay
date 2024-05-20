@@ -25,7 +25,10 @@ public class Praktikum {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите год:");
         int year = scanner.nextInt();
-        System.out.println("removed class Main");
+        String test1 = "check";
+        String test2 = "if git is";
+        String test3 = "working";
+        System.out.println(test1 + " " + test2 + " " + test3);
 
 //        if (isLeapYear(year)) {
 //            // здесь нужно вывести результат
