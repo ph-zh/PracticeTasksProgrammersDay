@@ -25,7 +25,7 @@ public class Praktikum {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите год:");
         int year = scanner.nextInt();
-        System.out.println("test message");
+        System.out.println("removed class Main");
 
 //        if (isLeapYear(year)) {
 //            // здесь нужно вывести результат
