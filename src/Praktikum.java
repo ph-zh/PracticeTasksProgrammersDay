@@ -38,18 +38,12 @@ public class Praktikum {
 
     public static boolean isLeapYear(int year) {
         // здесь нужно определить, является ли переданный год високосным
-        if (year % 100 == 0) {
-            if (year % 400 == 0) {
-                return true;
-            } else {
-                return false;
-            }
+        if (year % 400 == 0) {
+            return true;
+        } else if (year % 100 == 0) {
+            return false;
         } else if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                return false;
-            } else {
-                return true;
-            }
+            return true;
         } else {
             return false;
         }
