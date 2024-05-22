@@ -30,6 +30,8 @@ public class Praktikum {
         if (isLeapYear(year)) {
             // здесь нужно вывести результат
             System.out.println("12.09." + year + ".");
+        } else {
+            System.out.println("13.09." + year + ".");
         }
     }
 
@@ -38,19 +40,18 @@ public class Praktikum {
         // здесь нужно определить, является ли переданный год високосным
         if (year % 100 == 0) {
             if (year % 400 == 0) {
-                System.out.println("12.09." + year + ".");
+                return true;
             } else {
-                System.out.println("13.09." + year + ".");
+                return false;
             }
         } else if (year % 4 == 0) {
             if (year % 100 == 0) {
-                System.out.println("13.09." + year + ".");
+                return false;
             } else {
-                System.out.println("12.09." + year + ".");
+                return true;
             }
         } else {
-            System.out.println("13.09." + year + ".");
+            return false;
         }
-        return true;
     }
 }
